@@ -1,0 +1,103 @@
+.Header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.logo
+{
+    color: #FA9000;
+}
+
+ul
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+ul .linkTag
+{
+    text-decoration: none;
+    /* font-weight: 500; */
+    color: #000;
+    font-size: 1.2em;
+}
+ul .linkTag.active
+{
+    color: #FA9000;
+}
+
+.searchField
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.searchField i
+{
+    font-size: 1.3em;
+}
+.searchField input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+    color: #333;
+}
+
+
+.ParentCategoryBox
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.ParentCategoryBox:hover .categoryList
+{
+    display: grid;
+}
+
+.categoryList
+{
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(2,130px);
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+    transition: 0.5s;
+}
+.categoryList li
+{
+    padding: 5px;
+}
+.categoryList li:hover
+{
+    background-color: #FA9000;
+    color: #333;
+    border-radius:4px;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.blogWrapper
+{
+    /* background-color: #eee; */
+    width: calc(100% - 350px);
+    height: 100%;
+    padding: 20px 50px;
+}
+
+.MainTitle
+{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #000;
+}
+
+
+@media only screen and (max-width:1115px)
+{
+    .blogWrapper
+    {
+        width: calc(100% - 200px);
+    }
+}
+
+@media only screen and (max-width:950px)
+{
+    .blogWrapper
+    {
+        width:100%;
+        padding: 20px;
+    }
+}

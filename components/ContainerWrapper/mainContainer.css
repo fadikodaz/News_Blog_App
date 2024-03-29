@@ -1,0 +1,10 @@
+.MainContainerWrapper
+{
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 10px;
+    background-color: #eee;
+}

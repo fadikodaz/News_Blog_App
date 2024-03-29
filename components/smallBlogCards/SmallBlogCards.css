@@ -1,0 +1,79 @@
+.GridBox
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.BlogCards
+{
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+}
+
+/* img Section */
+.BlogImgBox
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.BlogImgBox .img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* contetn section */
+.BlogContentBox
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.BlogTitle
+{
+    font-size: 1.2em;
+}
+.BlogTitle,
+.BLogOverView
+{
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.BLogOverView
+{
+    max-height: 100px;
+    font-family: montserrat;
+    color: #838080;
+    max-height: 40px;
+}
+
+.BLogReadMorBtn
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.BLogReadMorBtn button
+{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:650px)
+{
+    .GridBox
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

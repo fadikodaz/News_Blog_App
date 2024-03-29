@@ -1,0 +1,105 @@
+.MainCard
+{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+}
+
+.ImgBox
+{
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ImgBox .img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentBox
+{
+    position: relative;
+    width: calc(100% - 450px);
+}
+
+.title
+{
+    color: #333;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.title,
+.overView
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.overView
+{
+    padding-right: 10px;
+    max-height: 150px;
+    text-align: justify;
+    color: #838080;
+    line-height: 25px;
+    font-family: montserrat;
+}
+
+.readMorBtn
+{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% );
+}
+
+
+@media only screen and (max-width:1115px)
+{
+    .ImgBox
+    {
+        width: 300px;
+    }
+    .contentBox
+    {
+        width: calc(100% - 300px);
+    }
+}
+
+@media only screen and (max-width:650px)
+{
+    .MainCard
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .ImgBox
+    {
+        width: 100%;
+        height: 300px;
+    }
+    .contentBox
+    {
+        width: 100%;
+    }
+    .overView
+    {
+        max-height: 100px;
+    }
+    .readMorBtn
+    {
+        display: none;
+    }
+}
